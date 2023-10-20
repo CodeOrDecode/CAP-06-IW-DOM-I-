@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #operation {
+            margin-top: 20px;
+            padding-left: 24px;
+        }
+
+        .all {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="number" placeholder="enter 1st number" id="value1">
+        <input type="number" placeholder="enter 2nd number" id="value2">
+        <div id="operation">
+            <button onclick="Add()" class="all">Add</button>
+            <button onclick="Subtract()" class="all">Subtract</button>
+            <button onclick="Multiply()" class="all">Multiply</button>
+            <button onclick="Divide()" class="all">Deivide</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script>
+    let value1 = document.getElementById("value1");
+    let value2 = document.getElementById("value2");
+    function Add() {
+        alert("Ans is" + " " + ((+value1.value) + (+value2.value)))
+    }
+    function Subtract() {
+        alert("Ans is" + " " + ((+value1.value) - (+value2.value)))
+    }
+    function Multiply() {
+        alert("Ans is" + " " + ((+value1.value) * (+value2.value)))
+    }
+    function Divide() {
+        alert("Ans is" + " " + ((+value1.value) / (+value2.value)))
+    }
+</script>
